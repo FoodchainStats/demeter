@@ -7,8 +7,8 @@ Run this code in r:
 
 
 ```r
-#Install the package "devtools"
-install.packages("devtools")
+#Install the package "devtools" if you don't already have it
+if (!require("devtools")) install.packages("devtools")
 
 #Enter your username
 username<-"your demeter username"
