@@ -3,7 +3,7 @@ Allows the user full internet connectivity in R e.g. the ability to connect to a
 
 # Installation
 
-Run this code in r:
+Run this code in r, replacing the username and password with your credentials.
 
 
 ```r
