@@ -7,15 +7,22 @@ Run this code in r:
 
 
 ```r
+#Install the package "devtools"
 install.packages("devtools")
 
+#Enter your username
 username<-"your demeter username"
 
+#Enter your password
 password<-"your demeter password"
 
+#Generate proxy address
 proxy_address<-paste0("http://",username,":",password,"@148.253.235.216:80")
-  Sys.setenv(http_proxy=proxy_address, https_proxy=proxy_address)
+
+#Create environment variable
+Sys.setenv(http_proxy=proxy_address, https_proxy=proxy_address)
   
+#Install package
 devtools::install_github("lina2497/demeter_proxy")
 ```
 
