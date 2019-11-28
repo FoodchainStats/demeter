@@ -36,10 +36,20 @@ demeter::proxy_connect()
 
 ```
 
-You will be prompted for your username and password. If successful you will be able to connect to any APIs you want. For example, the open street map API:
+You will be prompted for your username and password. If successful you will be able to connect to any APIs you want.
+
+
+This function:
+```r
+curl::has_internet()
+```
+May return FALSE despite your machine having full internet access. Some packages on CRAN designed for connecting to APIs use has_internet() as a test which might prevent you from using them to connect to an API. There are ways around this, such as connecting to the API directly using other packages such as jsonlite. 
+
+
+Here's one example of connecting to the internet via the open street map API:
 
 ```r
-install.packages("osmdata")
+devtools::install_github("lina2497/demeter_osmdata")
 
 #Connect to the OSM API and retrieve coordinates for a bounding box around London:
 osmdata::getbb("London")
