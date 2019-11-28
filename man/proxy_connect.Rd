@@ -4,10 +4,12 @@
 \alias{proxy_connect}
 \title{Connect through proxy with Demeter credentials hidden}
 \usage{
-proxy_connect(show_characters = FALSE)
+proxy_connect(show_characters = FALSE, url = "http://google.com")
 }
 \arguments{
 \item{show_characters}{logical indicating whether the characters of the password whould be visible.}
+
+\item{url}{Optional: Character string for the url you are trying to get to.}
 }
 \value{
 Allows internet connectivity, e.g. APIs, webscraping, installing packages from github.

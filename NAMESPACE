@@ -3,3 +3,5 @@
 export(lazy_proxy_connect)
 export(proxy_connect)
 import(getPass)
+importFrom(curl,ie_get_proxy_for_url)
+importFrom(stringr,str_split)
