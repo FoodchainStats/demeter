@@ -2,6 +2,7 @@
 #' Connect through proxy with Demeter credentials hidden
 #'
 #' @param show_characters logical indicating whether the characters of the password whould be visible.
+#' @param url  Optional: Character string for the url you are trying to get to. 
 #'
 #' @return Allows internet connectivity, e.g. APIs, webscraping, installing packages from github.
 #' @examples
@@ -9,6 +10,8 @@
 #' 
 #' @export
 #' @import getPass
+#' @importFrom stringr str_split
+#' @importFrom curl ie_get_proxy_for_url
 
 
 
