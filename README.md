@@ -23,7 +23,7 @@ proxy_address<-paste0("http://",username,":",password,"@148.253.235.216:80")
 Sys.setenv(http_proxy=proxy_address, https_proxy=proxy_address)
   
 #Install package
-devtools::install_github("lina2497/demeter_proxy")
+devtools::install_github("FoodchainStats/demeter")
 ```
 
 # Usage
